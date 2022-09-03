@@ -1,0 +1,26 @@
+#kill {
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    right: 17.5%;
+    font-weight: 800;
+    margin: 10% 0px 10% 0px;
+}
+
+#kill_list {
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    top: 45%;
+    right: 18.5%;
+    text-align: center;
+}
+
+#button {
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    top: 55%;
+    right: 18.5%;
+}

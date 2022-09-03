@@ -1,0 +1,36 @@
+#execute {
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    left: 26%;
+    font-weight: 800;
+    margin: 10% 0px 10% 0px;
+}
+
+#mafia_win {
+    animation: fadein 3s;
+}
+
+#credit {
+    animation: fadein 6s;
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 40%;
+}
+
+#img {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

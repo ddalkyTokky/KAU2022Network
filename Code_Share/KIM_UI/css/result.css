@@ -1,0 +1,33 @@
+#execute {
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 27.5%;
+    font-weight: 800;
+    margin: 10% 0px 10% 0px;
+}
+
+#job {
+    animation: fadein 3s;
+}
+
+#img {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+#time {
+    color: red;
+    font-weight: 800;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

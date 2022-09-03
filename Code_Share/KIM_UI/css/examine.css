@@ -1,0 +1,30 @@
+#examine {
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 35%;
+    font-weight: 800;
+    margin: 10% 0px 10% 0px;
+    animation: fadein 3s;
+}
+
+#button {
+    width: 200px;
+    position: absolute;
+    top: 55%;
+    left: 42.5%;
+}
+
+#examine_list {
+    width: 200px;
+    position: absolute;
+    top: 49.5%;
+    left: 42.5%;
+    text-align: center;
+}
+
+#time {
+    color: red;
+    font-weight: 800;
+}

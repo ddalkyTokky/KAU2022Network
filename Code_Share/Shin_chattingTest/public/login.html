@@ -1,0 +1,37 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <script type="text/javascript">
+function login(){
+    var ajax=$.ajax({
+        url: "/login",
+        data: "userid=" + $("#userid").val() + "&password= "+ $("#password").val(),
+        type: 'POST',
+        success: function(result){
+            if(result.code == 0){
+                $("#login").hide();
+                $("#logout").show();
+                $("#loginName").html(result.data.name);
+            }else{
+                alert(result.msg);
+            }
+        }
+    });
+}
+</script>
+<div style="width:420px;">
+    <div id="login" style="text-align:right;"> 로그인</div>
+    <div id="loginout" style="display:none;">
+        <span id="loginName"></span>님 <a href="/logout">로그아웃</a>
+    </div>
+    <hr>
+    <div>
+        <div>
+            <div> 아이디 <input type="text" id="userid" name="userid" style="width:100%;"></div>
+            <div> 패스워드 <input type="password" id="password" name="password" style="width:100%;"></div>
+            
+        
+        </div>
+        <div></div>
+    </div>
+    <div style="margin-top:8px;text-align:right;"> <input type="button" class="btnLogin" value="로그인" onclick="login();" ></div> 
+    <hr> 
+    <div style="text-align:center;"><a href="/signup" >회원가입</a></div> 
+</div>

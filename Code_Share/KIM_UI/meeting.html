@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/meeting.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+
+  function Timer() {
+  setTimeout("locateKap()",300000);
+   }
+  function locateKap(){
+   location.replace("./vote.html");
+  }
+  
+  </SCRIPT>
+  <script language='javascript'>
+    cnt = 300; // 카운트다운 시간 초단위로 표시
+    function countdown() {
+     if(cnt == 0){
+            // 시간이 0일경우
+  
+           locateKap();
+     }else {
+           // 시간이 남았을 경우 카운트다운을 지속한다.
+          document.all.time.innerHTML = "남은시간: " + cnt  ;
+          setTimeout("countdown()",1000);
+    cnt--;
+     }
+    }
+  </script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAFIA :: LOADING</title>
+  <style>
+    .vl {
+      border-left: 3px solid white;
+      height: 800px;
+      position: absolute;
+      left: 50%;
+      top: 5%;
+    }
+    </style>
+</head>
+
+
+<body onLoad="Timer();">
+  <div style="position: absolute; left: 10%; top: 0%;" class="container">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3" id="loading-box"></div>
+        <h4 id="afternoon"> N번째 낮</h3>
+        <h3 id="square"> #마을 광장 </h3>
+        <h3 id="time"></h3>
+        <script>countdown();</script>
+    </div>
+  </div>
+  <div style="position: absolute; left: 30%; top: 0%;" class="survival list">
+      <h3> 시민 : 4명 생존 0명 사망 </h3>
+      <h3> 마피아 : 2명 생존 0명 사망 </h3>
+  </div>
+  <div class="chat">
+    <textarea class="form-control" id="chatBot" style="resize:none; width:700px; height:600px; position: absolute; left: 10%; bottom:20%;" name="chatBot" readonly="readonly"> 채팅내용 </textarea>
+    <p></p><textarea class="form-control" id="chatUser" style="resize:none; width:600px; height:50px; position: absolute; left: 10%; bottom:12.5%;" name="chatUser"></textarea>
+    <p></p><input class="chatsend" id="chatPost" type="button" value="보내기" style="width:90px; height:50px; position: absolute; left: 42%; bottom:12.5%; color: black;" />
+  </div>
+
+  <div class="vl"></div>
+ 
+  <div style="position: absolute; right: 30%; top: 40%;" class="job">
+    <h3 id="job"> 당신의 직업은 "<span id="citizen" style="color:red">마피아</span>" 입니다 <br>
+  </div>
+</body>
+
+
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</html>

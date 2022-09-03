@@ -1,0 +1,13 @@
+#check-job {
+    color: white;
+    position: relative;
+    top: 20%;
+    left: 25%;
+    font-weight: 800;
+    margin: 10% 0px 10% 0px;
+}
+
+#time {
+    color: red;
+    font-weight: 800;
+}

@@ -1,0 +1,138 @@
+body{
+    display: flex;
+    /* justify-content: center; */
+    margin: 0px 440px;
+}
+
+main {
+    border: solid;
+    border-radius: 5px;
+    height: 1200px;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    /* height: 70%; */
+    max-height: 500px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+#userName {
+    text-align: center;
+}
+
+aside  {
+    margin: 0px 40px 0px 0px;
+}
+
+#form-container {
+    display: flex;
+    flex-direction: row;
+    margin: 7px 7px 10px 7px;
+}
+
+form {
+    display: flex;
+    /* align-items: flex-start; */
+    /* padding: 12px; */
+    /* position: sticky; */
+    /* bottom: 5px; */
+    background: white;
+    /* margin-top: 10px; */
+}
+
+#input, #submit {
+    display: inherit;
+}
+
+ul {
+    padding: 14px;
+    margin: 0px;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+    justify-content: space-between;
+}
+
+/* #message-container {
+    height: 1200px;
+} */
+
+#messages {
+    overflow: scroll;
+}
+
+li  {
+    list-style: none;
+    background-color: violet;
+    padding: 10px;
+    width: fit-content;
+    margin: 0px 0px 4px 0px;
+    border-radius: 5px;
+}
+
+.my-chat {
+    margin-left: auto;
+    background-color: rgb(152, 169, 243);
+}
+
+.my-name {
+    text-align: end;
+    background: none;
+    margin-right: 5px;
+}
+
+#form-contianer {
+    display: flex;
+    flex-direction: row;
+}
+
+#input {
+    width: 250px;
+    /* display: inline-block; */
+    padding: 10px;
+    border-radius: 5px;
+    /* position: fixed; */
+    /* width: 100%; */
+    /* margin-right: 0px; */
+    /* bottom: 50px; */
+}
+
+#submit {
+    display: inline-block;
+    border: none;
+    font-size: 15px;
+    background-color: blueviolet;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 5px;
+    /* position: fixed; */
+    bottom: 50px;
+    margin-left: 3px;
+}
+
+#clients-list {
+    background-color: white;
+}
+
+#clients-list > li {
+    background-color: lightgreen;
+}
+
+.roomInMsg {
+    width: 95%;
+    border-radius: 5px;
+    background-color: lightgrey;
+    text-align: center;
+}

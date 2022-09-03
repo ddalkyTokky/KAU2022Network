@@ -1,0 +1,28 @@
+#job {
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 30%;
+    font-weight: 800;
+    margin: 10% 0px 10% 0px;
+    animation: fadein 3s;
+}
+
+#role {
+    animation: fadein 9s;
+}
+
+#time {
+    color: red;
+    font-weight: 800;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

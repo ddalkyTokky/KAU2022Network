@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/examine.css">
+
+<SCRIPT LANGUAGE="JavaScript">
+
+  function Timer() {
+  setTimeout("locateKap()",10000);
+   }
+  function locateKap(){
+   location.replace("./result.html");
+  }
+  
+  </SCRIPT>
+  <script language='javascript'>
+    cnt = 10; // 카운트다운 시간 초단위로 표시
+    function countdown() {
+     if(cnt == 0){
+            // 시간이 0일경우
+  
+           locateKap();
+     }else {
+           // 시간이 남았을 경우 카운트다운을 지속한다.
+          document.all.time.innerHTML = "남은시간: " + cnt  ;
+          setTimeout("countdown()",1000);
+    cnt--;
+     }
+    }
+  </script>
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAFIA :: EXAMINE</title>
+</head>
+
+<body onLoad="Timer();">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6 col-xs-offset-3" id="loading-box"></div>
+        <h3 id="square"> #경찰 숙소</h3>
+        <h3 id="time"></h3>
+        <script>countdown();</script>
+          <h1 id="examine"> 어느 집을 조사하러 가겠습니까? </h1>
+          <select id="examine_list" style="font-size:20pt; color:black;">
+             <option value="시민1" style="color:black"> 시민1 </option> 
+             <option value="시민2" style="color:black"> 시민2 </option> 
+             <option value="시민3" style="color:black"> 시민3 </option> 
+          </select>
+          <button id="button" class="btn btn-lg btn-block text-uppercase btn-custom" type="submit">조사하기</button>
+    </div>
+  </div>
+</body>
+
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</html>
